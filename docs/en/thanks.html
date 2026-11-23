@@ -49,9 +49,9 @@
  * 渡し、そちらが Paddle に「本当に支払われたか」を確かめてからキーを返す。同じ取引番号には
  * 必ず同じキーが返るので、読み込み直しても、閉じて開き直しても安全。
  */
-// ▼ 要設定：キーを渡す仕組み（worker/cleanlock-keys.js を置いた Cloudflare Worker）の URL。
+// ▼ 要設定：キーを渡す仕組み（tsubomi-sales の worker/tsubomi-keys.js を置いた Cloudflare Worker）の URL。
 // 空のあいだは「info@tsubomi.jp までご連絡ください」と出す。英語のページ（en/thanks.html）にも同じ値を入れる。
-const KEY_SERVICE = "https://cleanlock-keys.small-leaf-0ba1.workers.dev";
+const KEY_SERVICE = "https://tsubomi-keys.small-leaf-0ba1.workers.dev";
 const MAIL = "info@tsubomi.jp";
 
 const state = document.getElementById("state");
